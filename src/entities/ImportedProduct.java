@@ -30,10 +30,16 @@ public class ImportedProduct extends Product {
     //MÉTODOOS FUNÇÕES
     @Override
     public String priceTag() {
+        return getName()
+                + " $ "
+                + String.format("%.2f", totalPrice())
+                + " (Customs fee: $ "
+                + String.format("%.2f", customsFee)
+                + ")";
     }
 
     public double totalPrice() {
-        priceTag() + customsFee;
+        return getPrice() + customsFee;
     }
 
 }
