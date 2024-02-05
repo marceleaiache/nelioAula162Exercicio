@@ -27,7 +27,7 @@ public class ImportedProduct extends Product {
         this.customsFee = customsFee;
     }
 
-    //MÉTODOOS FUNÇÕES
+    //SOBREPONDO O MÉTODO DA SUPERCLASS PRODUCT
     @Override
     public String priceTag() {
         return getName()
@@ -38,6 +38,7 @@ public class ImportedProduct extends Product {
                 + ")";
     }
 
+    //MÉTODO FUNÇÃO
     public double totalPrice() {
         return getPrice() + customsFee;
     }

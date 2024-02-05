@@ -29,7 +29,7 @@ public class UsedProduct extends Product {
         this.manufactureDate = manufactureDate;
     }
 
-    //MÉTODO FUNÇÃO
+    //SOBREPONDO O MÉTODO DA SUPERCLASS PRODUCT
     @Override
     public String priceTag() {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -39,6 +39,4 @@ public class UsedProduct extends Product {
                 + sdf.format(manufactureDate)
                 + ")";
     }
-
-
 }
