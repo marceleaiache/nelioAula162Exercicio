@@ -6,7 +6,6 @@ public class ImportedProduct extends Product {
     private Double customsFee;
 
     //MÉTODOS CONSTRUTORES SEM ARGUMENTO
-
     public ImportedProduct() {
         super();
     }
@@ -18,7 +17,6 @@ public class ImportedProduct extends Product {
     }
 
     //MÉTODOS GETTERS AND SETTERS
-
     public Double getCustomsFee() {
         return customsFee;
     }

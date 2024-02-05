@@ -17,7 +17,6 @@ public class Product {
     }
 
     //MÉTODOS GETTERS AND SETTERS
-
     public String getName() {
         return name;
     }
